@@ -1,0 +1,671 @@
+.main-row {
+  display: flex;
+  margin: 0 -15px;
+}
+.main-coll {
+  display: flex;
+  justify-content: center;
+}
+.main-content {
+  // height: 500vh;
+}
+
+// ====== BEM block =======
+.title {
+  position: relative;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 200;
+  font-size: 38px;
+  padding-bottom: 20px;
+  span {
+    color: #969696;
+    font: 500 14px open sans, sans-serif;
+    padding-left: 10px;
+  }
+  &::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: "";
+    display: inline-block;
+    width: 45px;
+    height: 2px;
+    background-color: @bg-primary;
+  }
+}
+// ====== BEM block =======
+
+// ======== Section about ========
+.about,
+.services,
+.portfolio,
+.resume,
+.blog,
+.testimonial,
+.feedback {
+  position: relative;
+  padding: 50px 0;
+}
+.about-title {
+  margin-bottom: 30px;
+}
+.about-phone {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 55;
+  display: flex;
+}
+.call-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 40px;
+  border-radius: 40px;
+  box-shadow: 1px 1px 4px #000;
+  margin-right: 10px;
+}
+.call-text {
+  background-color: @bg-primary;
+  display: flex;
+  padding: 10px;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  box-shadow: 0 0 10px -4px #000;
+}
+.about-info {
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  margin: 0 0 50px;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+  line-height: 40px;
+  span {
+    padding: 2px 10px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 5px;
+  }
+}
+.about-text {
+  line-height: 30px;
+  color: #969696;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px -10px;
+}
+.skill-outer {
+  width: 50%;
+  padding: 0 15px 10px;
+
+  &:nth-child(2) .skill-progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: @bg-primary;
+  }
+  &:nth-child(3) .skill-progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: @bg-primary;
+  }
+  &:nth-child(4) .skill-progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: @bg-primary;
+  }
+  &:nth-child(5) .skill-progress::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: @bg-primary;
+  }
+}
+.skill-title {
+  position: relative;
+  font-size: 13px;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  span {
+    position: relative;
+    margin-left: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 30px;
+    box-shadow: 0 0 20px -5px #000;
+    color: #969696;
+    border-radius: 3px;
+    letter-spacing: 1.1px;
+    &::after {
+      position: absolute;
+      top: 17%;
+      left: -8px;
+      content: "";
+      display: inline-block;
+      border-right: 10px solid #fff;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+    }
+  }
+}
+.skill-progress {
+  position: relative;
+  width: 100%;
+  height: 5px;
+  background-color: #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background-color: @bg-primary;
+  }
+}
+
+// ======== Section about ========
+
+// ======== Section services =======
+.services-title {
+  margin-bottom: 30px;
+}
+.services-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px -30px;
+}
+.card {
+  width: 50%;
+  padding: 0 15px 30px;
+  display: flex;
+}
+.card-icon {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 15px;
+  i {
+    color: #969696;
+    font-size: 28px;
+  }
+}
+.card-info {
+}
+.card-title {
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Titillium Web", serif;
+}
+
+.card-text {
+  line-height: 30px;
+  color: #969696;
+}
+
+// ======== Section services =======
+.text-title {
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Titillium Web", serif;
+}
+// ======== Section resume =======
+
+.flex-resume {
+  display: flex;
+  flex-direction: column;
+}
+.resum-item {
+  display: flex;
+  align-items: center;
+}
+.resum-icon {
+  width: 150px;
+  height: 90px;
+  box-shadow: 0 0 20px -10px #000;
+  border-radius: 100px;
+  margin-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  i {
+    font-size: 30px;
+    color: #ee5a24;
+  }
+}
+.resum-info {
+}
+.resum-title {
+  letter-spacing: 1.1px;
+}
+.resum-data {
+  color: #a0a0a0;
+  font-size: 13px;
+  font-style: italic;
+  letter-spacing: 1.1px;
+}
+.resum-text {
+  line-height: 30px;
+  color: #969696;
+}
+
+// ======== Section resume =======
+
+// ======== Portfolio services =======
+
+.p-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.portfolio-buttons {
+}
+.btn {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 40%);
+  padding: 10px 15px;
+  text-transform: uppercase;
+  border-radius: 20px;
+  background-color: #fff;
+  &.p-btn__active {
+    box-shadow: inset 0 0 8px -3px #000;
+    background-color: #e6e6e6;
+    transition: all 1s ease;
+    &:hover {
+      background-color: #fff;
+    }
+  }
+  &:hover {
+    background-color: #e6e6e6;
+  }
+}
+.p-btn {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.flex-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -7px -10px;
+}
+.gallery-item {
+  display: block;
+  position: relative;
+  width: 33.333%;
+  padding: 0 7px 10px;
+  height: 250px;
+  &:hover .gallery-info {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+.gallery-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery-info {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(238, 90, 36, 0.8);
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.gallery-title {
+  margin: 0;
+  color: #fff;
+}
+.gallery-text {
+  color: #fff;
+}
+
+// ======== Portfolio services =======
+
+// ======== Blog-post services =======
+
+.blog-title {
+  margin-bottom: 30px;
+}
+
+.blog-card {
+  display: flex;
+  margin: 0 -15px -30px;
+}
+.card-blog {
+  width: 33.333%;
+  padding: 0 15px 30px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.blog-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.post-data {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: #fff;
+  font-style: italic;
+  font-family: "Titillium Web", sans-serif;
+  font-weight: 400;
+  letter-spacing: 1.3px;
+  i {
+    color: #fff;
+    margin-right: 7px;
+  }
+}
+.blog-info {
+}
+.blog-title {
+}
+.blog-text {
+  color: #969696;
+  line-height: 25px;
+  font-size: 14px;
+}
+.blog-btn {
+  color: #a9a9a9;
+}
+
+// ======== Blog-post ==========
+
+// ======== Blog-post ==========
+
+.testimonial-title {
+  margin-bottom: 30px;
+}
+
+.testimonial-slide {
+}
+.testimonial-item {
+}
+.testimonial-comment {
+  border: 1px solid #cacaca;
+  letter-spacing: 1.5px;
+  line-height: 25px;
+  color: #969696;
+  font-size: 14px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.testimonial-user {
+  display: flex;
+  align-items: center;
+}
+.testimonial-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-right: 10px;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.testimonial-name {
+  h2 {
+    margin: 0 0 5px 0;
+  }
+  p {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+// ======== Blog-post ==========
+
+// ======== feedback ==========
+
+.feedback-title {
+  margin-bottom: 30px;
+}
+.flex-feedback {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 -15px -20px;
+}
+.feedback-form {
+  width: 45%;
+  padding: 0 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 25px;
+  height: 400px;
+  input[type="text"],
+  input[type="email"] {
+    width: 100%;
+    height: 40px;
+    padding: 15px 0;
+    border-bottom: 1px solid #dbdbdb;
+    color: #bbbbbb;
+    letter-spacing: 1.4px;
+  }
+  textarea {
+    padding: 10px 0;
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid #dbdbdb;
+    color: #bbbbbb;
+    letter-spacing: 1.4px;
+  }
+}
+.feedback-bl {
+  width: 45%;
+  padding: 0 15px 20px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.send-btn {
+  width: 145px;
+  background-color: @bg-primary;
+  color: #fff;
+  cursor: pointer;
+  &:hover {
+    color: #000;
+  }
+}
+.shadow {
+  box-shadow: 0 0 20px -15px #000;
+}
+.feedback-address {
+  i{
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Titillium Web", serif;
+  p{
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+.feedback-phone {
+  i{
+    margin-right: 10px;
+    font-size: 14px;
+  }
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: 700;
+  font-family: "Titillium Web", serif;
+  p{
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+.feedback-email {
+  
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "Titillium Web", serif;
+  p{
+    font-size: 12px;
+    font-weight: 400;
+  }
+  i{
+    margin-right: 10px;
+    font-size: 14px;
+  }
+}
+
+// ======== feedback ==========
+
+.footer {
+  padding: 20px 0;
+}
+.footer-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.left-text,
+.right-text {
+  font-size: 14px;
+  font-weight: 400;
+  color: #979797;
+  letter-spacing: 1.4px;
+  font-style: italic;
+}
+
+
+// ======== SidebarWrap ==========
+.sidebarWrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  transform: translateX(-60px);
+  padding: 30px 0;
+  height: 100vh;
+  background-color: @bg-primary;
+  box-shadow: 0 0 20px -9px #000;
+}
+.sidebar-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+.signature {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  h4 {
+    font-size: 17px;
+    font-family: "Dancing Script", cursive;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+}
+.nav-menu {
+  width: 100%;
+  height: 320px;
+  background-color: #fff;
+}
+.nav-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  padding: 10px 60px;
+}
+.nav-item {
+  font-family: "Titillium Web", sans-serif;
+  padding: 13px 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.gallery-title {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+.gallery-text {
+}
+
+// ======== SidebarWrap ==========
+// font-family: 'Dancing Script', cursive;
+// font-family: 'Titillium Web', sans-serif;

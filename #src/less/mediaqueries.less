@@ -1,0 +1,136 @@
+@media screen and (max-width: 1200px) {
+  .container {
+    max-width: 1170px;
+  }
+  .sidebarWrap {
+    transform: translateX(-19px);
+  }
+}
+@media screen and (max-width: 992px) {
+  .container {
+    max-width: 750px;
+    // max-width: none;
+  }
+  .overlay.open {
+    transition: all 0.3s;
+    opacity: 1;
+    visibility: visible;
+  }
+  .main-row {
+    flex-direction: column-reverse;
+  }
+  .signature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h2 {
+      margin: 0;
+    }
+  }
+  .main-row {
+    margin: 0;
+  }
+  .sidebarWrap {
+    position: static;
+    width: 100%;
+    height: inherit;
+    padding: 15px 0;
+    transform: translateX(0px);
+  }
+  .col-3,
+  .col-9 {
+    max-width: 100%;
+  }
+  .menu-btn {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .nav-menu {
+    height: 0px;
+    transition: all 0.9s linear;
+    overflow: hidden;
+  }
+  .nav-list {
+    flex-direction: row;
+  }
+  .nav-menu.active {
+    height: 65px;
+  }
+  .menu-btn__burger,
+  .menu-btn__burger::before,
+  .menu-btn__burger::after {
+    background: #fff;
+  }
+  .resum-icon {
+    width: 220px;
+  }
+  .flex-feedback {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    max-width: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    max-width: none;
+  }
+  .skills,
+  .services-card,
+  .p-flex,
+  .flex-gallery,
+  .blog-card,
+  .flex-feedback,
+  .resum-item {
+    flex-direction: column;
+  }
+  .portfolio-title {
+    margin-bottom: 40px;
+  }
+  .skill-outer,
+  .card,
+  .gallery-item,
+  .card-blog,
+  .feedback-form,
+  .feedback-bl {
+    width: 100%;
+  }
+  .resum-icon {
+    width: 90px;
+  }
+  .feedback-form {
+    margin-bottom: 20px;
+  }
+  .title {
+    text-align: center;
+    margin: 40px 0;
+  }
+  .title::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-81%);
+  }
+  .nav-list {
+    flex-direction: column;
+  }
+  .nav-menu.active {
+    height: 320px;
+  }
+  .title {
+    text-align: center;
+    margin: 40px 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: none;
+  }
+}
